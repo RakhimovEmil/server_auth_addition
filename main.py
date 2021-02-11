@@ -18,7 +18,7 @@ def lol(smth):
     if d.get(result.group(1)) == result.group(2):
         return "", 200
     else:
-        return "access is denied", 404
+        return "access is denied", 403
 
 
 if __name__ == '__main__':
