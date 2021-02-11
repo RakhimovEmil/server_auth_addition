@@ -36,7 +36,7 @@ class Test(unittest.TestCase):
         cur = 'Basic ' + str
         headers = {'Authorization': cur}
         ans = requests.get(url, headers=headers)
-        self.assertEqual(ans.status_code, 404)
+        self.assertEqual(ans.status_code, 403)
 
         url = 'http://localhost:5000/file42'
         str = "jack:sparrow"
